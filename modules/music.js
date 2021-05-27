@@ -2,7 +2,7 @@ const ytdl = require("ytdl-core");
 const queue = new Map();
 const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtube.com/watch?v=WMweEpGlu_U",
 "https://www.youtube.com/watch?v=0tWU94w_3ig","https://www.youtube.com/watch?v=tuEZ_8HdnwQ",
-"https://www.youtube.com/watch?v=Cvb76hBX_Oc","https://www.youtube.com/watch?v=v-E8gnce6-c",
+"https://www.youtube.com/watch?v=Cvb76hBX_Oc","https://www.youtube.com/watch?v=95djGqyDVKA",
 "https://www.youtube.com/watch?v=5abamRO41fE","https://www.youtube.com/watch?v=jHUEwcOQjjI",
 "https://www.youtube.com/watch?v=BdtrgP5n6tw","https://www.youtube.com/watch?v=-fDsA9pZr4g",
 "https://www.youtube.com/watch?v=EuJ6UR_pD5s","https://www.youtube.com/watch?v=UvD4Zv146FI",
