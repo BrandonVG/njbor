@@ -4,8 +4,7 @@ const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtu
 "https://www.youtube.com/watch?v=0tWU94w_3ig","https://www.youtube.com/watch?v=tuEZ_8HdnwQ",
 "https://www.youtube.com/watch?v=Cvb76hBX_Oc","https://www.youtube.com/watch?v=v-bf1beaRXI",
 "https://www.youtube.com/watch?v=5abamRO41fE","https://www.youtube.com/watch?v=jHUEwcOQjjI",
-"https://www.youtube.com/watch?v=BdtrgP5n6tw","https://www.youtube.com/watch?v=-fDsA9pZr4g",
-"https://www.youtube.com/watch?v=EuJ6UR_pD5s","https://www.youtube.com/watch?v=UvD4Zv146FI",
+"https://www.youtube.com/watch?v=BdtrgP5n6tw","https://www.youtube.com/watch?v=EuJ6UR_pD5s","https://www.youtube.com/watch?v=UvD4Zv146FI",
 "https://www.youtube.com/watch?v=v4BVENVywWA","https://www.youtube.com/watch?v=Ti2pA5JgrMI",
 "https://www.youtube.com/watch?v=boFBGUZiFw4","https://www.youtube.com/watch?v=Ar-IEE_DIEo"];
 
