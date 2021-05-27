@@ -11,7 +11,7 @@ const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtu
     async function execute(message, serverQueue){
         let rndNumber = Math.ceil(Math.random() * btsong.length-1);
         console.log(rndNumber)
-        const args = btsong[rndNumber];
+        const args = btsong[6];
         let vc = message.member.voice.channel;
         if (!vc) return;
         const songInfo = await ytdl.getInfo(args);
