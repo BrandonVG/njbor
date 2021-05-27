@@ -1,8 +1,10 @@
 const ytdl = require("ytdl-core");
 const queue = new Map();
 const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtube.com/watch?v=WMweEpGlu_U",
-"https://www.youtube.com/watch?v=0tWU94w_3ig","https://www.youtube.com/watch?v=tuEZ_8HdnwQ","https://www.youtube.com/watch?v=Cvb76hBX_Oc",
-"https://www.youtube.com/watch?v=5abamRO41fE","https://www.youtube.com/watch?v=xAveh4mKXsA",
+"https://www.youtube.com/watch?v=0tWU94w_3ig","https://www.youtube.com/watch?v=tuEZ_8HdnwQ",
+"https://www.youtube.com/watch?v=Cvb76hBX_Oc","https://www.youtube.com/watch?v=v-E8gnce6-c",
+"https://www.youtube.com/watch?v=5abamRO41fE","https://www.youtube.com/watch?v=jHUEwcOQjjI",
+"https://www.youtube.com/watch?v=BdtrgP5n6tw","https://www.youtube.com/watch?v=-fDsA9pZr4g",
 "https://www.youtube.com/watch?v=EuJ6UR_pD5s","https://www.youtube.com/watch?v=UvD4Zv146FI",
 "https://www.youtube.com/watch?v=v4BVENVywWA","https://www.youtube.com/watch?v=Ti2pA5JgrMI",
 "https://www.youtube.com/watch?v=boFBGUZiFw4","https://www.youtube.com/watch?v=Ar-IEE_DIEo"];
@@ -10,8 +12,7 @@ const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtu
 
     async function execute(message, serverQueue){
         let rndNumber = Math.ceil(Math.random() * btsong.length-1);
-        console.log(rndNumber)
-        const args = btsong[6];
+        const args = btsong[rndNumber];
         let vc = message.member.voice.channel;
         if (!vc) return;
         const songInfo = await ytdl.getInfo(args);
@@ -19,6 +20,7 @@ const btsong = ["https://www.youtube.com/watch?v=OiMWFojB9Ok","https://www.youtu
             title: songInfo.videoDetails.title,
             url: songInfo.videoDetails.video_url
         };
+        console.log(song.title);
         if (!serverQueue){
             const queueConstruct ={
                 voiceChannel: vc,
