@@ -7,7 +7,7 @@ bot.login(key);
 bot.on("message", async message =>{
     if (message.author.bot) return;
     let rndNumber = Math.ceil(Math.random() * 100);
-    if (rndNumber <= 100){
+    if (rndNumber <= 5){
         
         music(message);
     }
